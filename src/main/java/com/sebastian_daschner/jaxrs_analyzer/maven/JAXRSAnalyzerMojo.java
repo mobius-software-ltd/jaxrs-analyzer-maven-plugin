@@ -280,7 +280,7 @@ public class JAXRSAnalyzerMojo extends AbstractMojo {
         final Set<Path> dependencies = artifacts.stream().filter(a -> !a.getScope().equals(Artifact.SCOPE_TEST)).map(Artifact::getFile)
                 .filter(Objects::nonNull).map(File::toPath).collect(Collectors.toSet());
 
-        final String analyzerVersion = project.getPluginArtifactMap().get("com.sebastian-daschner:jaxrs-analyzer-maven-plugin").getVersion();
+        final String analyzerVersion = project.getPluginArtifactMap().get("com.mobius-software.plugins:jaxrs-analyzer-maven-plugin").getVersion();
 
         // Java EE 7 and JAX-RS Analyzer API is needed internally
         dependencies.add(fetchDependency("javax:javaee-api:7.0"));
