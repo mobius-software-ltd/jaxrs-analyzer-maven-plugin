@@ -33,7 +33,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.sebastian-daschner</groupId>
+            <groupId>com.mobius-software.plugins</groupId>
             <artifactId>jaxrs-analyzer</artifactId>
             <version>0.21</version>
         </dependency>
