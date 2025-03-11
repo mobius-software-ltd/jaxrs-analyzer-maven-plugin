@@ -284,7 +284,7 @@ public class JAXRSAnalyzerMojo extends AbstractMojo {
 
         // Java EE 7 and JAX-RS Analyzer API is needed internally
         dependencies.add(fetchDependency("javax:javaee-api:7.0"));
-        dependencies.add(fetchDependency("com.sebastian-daschner:jaxrs-analyzer:" + analyzerVersion));
+        dependencies.add(fetchDependency("com.mobius-software.plugins:jaxrs-analyzer:" + analyzerVersion));
         return dependencies;
     }
 
